@@ -4,12 +4,12 @@ First I will create a rudementary console application
 Then I will eventually create a desktop application to provide an interface for the program...
 */
 
-#include "IncludeLibraries.h"
-#include "IncludeClasses.h"
+#include "headers/IncludeLibraries.h"
+#include "headers/IncludeClasses.h"
 
 int main()
 {
-	std::cout << "I'm not sure if I'm even going to work on this much";
+	std::cout << "I'm not sure if I'm even going to work on this much\n";
 	
 
 
