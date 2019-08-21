@@ -1,5 +1,5 @@
-#include "IncludeClasses.h" //For libraries
-#include "Player.h"
+#include "IncludeLibraries.h" //For libraries
+#include "IncludeClasses.h"	//For classes
 
 
 int Player::displayStats()
