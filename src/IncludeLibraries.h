@@ -1,5 +1,5 @@
-#ifndef INCLUSIONS_H
-#define INCLUSIONS_H
+#ifndef INCLUDE_LIBRARIES_H
+#define INCLUDE_LIBRARIES_H
 //This will be changed later but for now will define basic funcitons and include some libraries that will be used extensively throughout the program
 
 #include <iostream>						//For outputting specific things or displaying items to the console
