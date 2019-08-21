@@ -1,13 +1,12 @@
 #pragma once
-class Monster
+class Monster: public Mob
 {
 public:
 
 
 
 private:
-	int hitpoints;
-	int level;
+	
 	
 
 };

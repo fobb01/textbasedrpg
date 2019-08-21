@@ -2,7 +2,7 @@
 
 #include <vector>
 
-class mob
+class Mob
 {
 public:
   int getLevel();
@@ -10,7 +10,7 @@ public:
   int getMP();
   std::vector<int>& getItems();                     //Will return a refrence to a vector of item indexes belonging to the mob
 
-private:
+protected:
   std::vector<int> item_list;
   int level, hp, mp;
 
