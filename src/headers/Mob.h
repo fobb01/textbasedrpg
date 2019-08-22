@@ -3,8 +3,21 @@
 #include <vector>
 
 class Mob
-{
+{ 
+private:
+
+  int level, hp, mp, ac;
+ 
 public:
+  //Constructor
+  Mob(int level, int hp, int mp, int ac)  
+  {
+    this->level = level;
+    this->hp = hp;
+    this->mp = mp;
+    this->ac = ac;
+  }
+
   //Methods defined in class header
   int getLevel() {return level;}
   int getHP() {return hp;}
@@ -22,9 +35,6 @@ public:
 
   bool takeDamage(int roll, Mob& enemy);                 //Returns false if the attack did not hit
   int rollAttack(int item_index);                        //Returns an attack roll
-  
-private:
 
-  int level, hp, mp, ac;
 
 };

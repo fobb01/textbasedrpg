@@ -9,9 +9,13 @@ Then I will eventually create a desktop application to provide an interface for 
 
 int main()
 {
-	std::cout << "I'm not sure if I'm even going to work on this much\n";
 	
+	Mob *test;
+	test = new Mob(12, 22, 43, 32);
 
+	std::cout << test->getHP() << " " << test->getMP() << std::endl;
+
+	
 
 	return 0;
 }
