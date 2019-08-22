@@ -12,7 +12,7 @@ int main()
 	
 	Mob *test;
 	test = new Mob(12, 22, 43, 32);
-
+	
 	std::cout << test->getHP() << " " << test->getMP() << std::endl;
 
 	
