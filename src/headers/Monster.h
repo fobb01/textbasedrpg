@@ -2,7 +2,7 @@
 class Monster: public Mob
 {
 public:
-
+  // need constructor
 
 
 private:
