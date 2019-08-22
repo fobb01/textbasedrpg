@@ -33,7 +33,7 @@ public:
 
   //Public methods defined in mob cpp file
 
-  bool takeDamage(int roll, Mob& enemy);                 //Returns false if the attack did not hit
+  bool takeDamage(int roll, Mob *enemy);                 //Returns false if the attack did not hit
   int rollAttack(int item_index);                        //Returns an attack roll
 
 

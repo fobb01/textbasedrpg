@@ -2,7 +2,7 @@
 #include "../headers/IncludeLibraries.h"
 #include "../headers/IncludeClasses.h"
 
-bool takeDamage(int roll, Mob &enemy) //Returns false if the attack did not hit
+bool takeDamage(int roll, Mob *enemy) //Returns false if the attack did not hit
 {
 
 }
