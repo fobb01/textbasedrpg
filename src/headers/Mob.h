@@ -10,13 +10,13 @@ private:
  
 public:
   //Constructor
-  Mob(int level, int hp, int mp, int ac)  
+  Mob(int level = 0, int hp = 0, int mp = 0 , int ac = 0)     //Defaults to zero
   {
     this->level = level;
     this->hp = hp;
     this->mp = mp;
     this->ac = ac;
-  }
+  } 
 
   //Methods defined in class header
   int getLevel() {return level;}
@@ -28,6 +28,7 @@ public:
   void setHP(int x) {hp = x;}
   void setMP(int x) {mp = x;}
   void setAC(int x) {ac = x;}
+
 
   std::vector<int> item_list;
 

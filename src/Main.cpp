@@ -10,10 +10,10 @@ Then I will eventually create a desktop application to provide an interface for 
 int main()
 {
 	
-	Mob *test;
-	test = new Mob(12, 22, 43, 32);
+	Player *test;
+	test = new Player(1, 2, 3, 4);
 	
-	std::cout << test->getHP() << " " << test->getMP() << std::endl;
+	test->printing();
 
 	
 
