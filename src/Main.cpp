@@ -6,16 +6,23 @@ Then I will eventually create a desktop application to provide an interface for 
 
 #include "headers/IncludeLibraries.h"
 #include "headers/IncludeClasses.h"
-
+#include "./source/Dungeon.cpp"
 int main()
 {
-	
-	Player *test;
-	test = new Player(1, 2, 3, 4);
-	
-	test->printing();
+	Dungeon *test;
+	test = new Dungeon(200, 200);
 
-	
+	if (test)
+	{
+		std::cout << "Test Successful\n";
 
+		test->displayLevel();
+		delete test;
+	}
+	else
+	{
+		std::cout << "Not allocated";
+	}
+	
 	return 0;
 }

@@ -8,6 +8,12 @@ private:
 
   int level, hp, mp, ac;
  
+
+protected:
+
+//TODO: Define stuff here
+
+
 public:
   //Constructor
   Mob(int level = 0, int hp = 0, int mp = 0 , int ac = 0)     //Defaults to zero

@@ -15,12 +15,9 @@ public:
   
   int dropItem(int item_index);
 
+  int* playerLoc();                   //Returns a pointer to the player location on the board
 
 private:
-
-
-
-
 };
 
 
