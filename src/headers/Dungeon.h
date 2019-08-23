@@ -14,6 +14,5 @@ public:
     
 
     bool displayLevel();
-
     bool crtFail;                               //Holds true if the level was created false if not                  
 };

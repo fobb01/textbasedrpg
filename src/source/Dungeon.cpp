@@ -4,7 +4,7 @@
 
 //Function declarations of the class defined in the header file Dungeon.h 
 //Each level of the dungeon is randomly generated
-Dungeon::Dungeon(int vertSize, int horiSize)               //Calls the function create dungeon in constructor with 100 for both as default values if not passed
+Dungeon::Dungeon(int vertSize, int horiSize)               
     {
         this->vertSize = vertSize;
         this->horiSize = horiSize;
