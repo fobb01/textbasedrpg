@@ -1,5 +1,5 @@
-#include "../headers/IncludeLibraries.h" //For libraries
-#include "../headers/IncludeClasses.h"	//For classes
+#include "IncludeLibraries.h"
+#include "IncludeClasses.h"	//For classes
 
 
 void Player::getItem(int item_index)

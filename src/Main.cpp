@@ -4,9 +4,9 @@ First I will create a rudementary console application
 Then I will eventually create a desktop application to provide an interface for the program...
 */
 
-#include "headers/IncludeLibraries.h"
-#include "headers/IncludeClasses.h"
-
+#include "IncludeLibraries.h"
+#include "IncludeClasses.h"
+#include "Dungeon.cpp"
 
 int main()
 {

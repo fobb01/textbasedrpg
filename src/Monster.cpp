@@ -1,4 +1,5 @@
-#pragma once
+#include
+
 class Monster: public Mob
 {
 public:
@@ -15,4 +16,3 @@ private:
 	
 
 };
-

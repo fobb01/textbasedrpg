@@ -1,14 +1,15 @@
-#include "../headers/Dungeon.h"
-#include "../headers/IncludeLibraries.h"
-#include "../headers/IncludeClasses.h"
+#include "IncludeLibraries.h"
+#include "IncludeClasses.h"
+
 
 //Function declarations of the class defined in the header file Dungeon.h 
 //Each level of the dungeon is randomly generated
-Dungeon(int vert, int hori)               
-    {
-        vertSize = vert;
-        horiSize = hori;
-    }
+
+Dungeon::Dungeon(int vert, int hori)               
+{
+    vertSize = vert;
+    horiSize = hori;
+}
 
 bool Dungeon::buildLevel()          //Private method
 {
@@ -18,7 +19,7 @@ bool Dungeon::buildLevel()          //Private method
 
 bool Dungeon::displayLevel()
 {
-    std::cout << vertSize << horiSize;
+    std::cout << vertSize << horiSize << std::endl;
     return true;
 }
 
