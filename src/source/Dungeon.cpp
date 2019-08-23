@@ -4,10 +4,10 @@
 
 //Function declarations of the class defined in the header file Dungeon.h 
 //Each level of the dungeon is randomly generated
-Dungeon::Dungeon(int vertSize, int horiSize)               
+Dungeon(int vert, int hori)               
     {
-        this->vertSize = vertSize;
-        this->horiSize = horiSize;
+        vertSize = vert;
+        horiSize = hori;
     }
 
 bool Dungeon::buildLevel()          //Private method
@@ -18,6 +18,7 @@ bool Dungeon::buildLevel()          //Private method
 
 bool Dungeon::displayLevel()
 {
+    std::cout << vertSize << horiSize;
     return true;
 }
 

@@ -6,11 +6,12 @@ Then I will eventually create a desktop application to provide an interface for 
 
 #include "headers/IncludeLibraries.h"
 #include "headers/IncludeClasses.h"
-#include "./source/Dungeon.cpp"
+
+
 int main()
 {
 	Dungeon *test;
-	test = new Dungeon(200, 200);
+	test = new Dungeon(20, 60);
 
 	if (test)
 	{
