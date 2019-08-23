@@ -5,9 +5,7 @@ class Tile                  //Dungeon is an array of type tile, tile holds anoth
 private:
     
 public:
-    char testingChar;
     
-
 };
 
 

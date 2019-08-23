@@ -5,19 +5,15 @@
 
 class Dungeon{
 private:
-    // Tile* level[200][200];                    //TODO: FIX THIS IT IS VERY BROKEN!!!
-
-    bool buildLevel(int vertSize, int horiSize);                  //Builds the dungeon itself 
-
+    bool buildLevel();                  //Builds the dungeon itself 
+    int vertSize, horiSize;
     
 public:
     
-    Dungeon(int vertSize, int horiSize);               //Calls the function create dungeon in constructor with 100 for both as default values if not passed
+    Dungeon(int vertSize = 20, int horiSize = 60);               //Calls the function create dungeon in constructor with 100 for both as default values if not passed
     
 
     bool displayLevel();
 
-    bool crtFail;                               //Holds true if the level was created false if not
-
-                          
+    bool crtFail;                               //Holds true if the level was created false if not                  
 };
