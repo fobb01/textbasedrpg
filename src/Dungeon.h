@@ -7,12 +7,13 @@ class Dungeon{
 private:
     bool buildLevel();                  //Builds the dungeon itself holds if successful
     int vertSize, horiSize;
-    
 
 public:
     
-    Dungeon(int vertSize = 20, int horiSize = 60);               //Calls the function create dungeon in constructor with 100 for both as default values if not passed
+    Dungeon(int vertSize = 100, int horiSize = 100);               //Calls the function create dungeon in constructor with 100 for both as default values if not passed
     
+    virtual bool makeDungeon();
+
 
     bool displayLevel();                
 };
