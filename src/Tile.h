@@ -1,11 +1,11 @@
 #pragma once
 
-class Tile                  //Dungeon is an array of type tile, tile holds another object, defaults to empty space
+class Tile                 //Dungeon on screen is an array of type tile, tile holds another object, defaults to empty space
 {
 private:
     
 public:
-    
+     
 };
 
 
