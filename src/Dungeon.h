@@ -12,8 +12,5 @@ public:
     
     Dungeon(int vertSize = 100, int horiSize = 100);               //Calls the function create dungeon in constructor with 100 for both as default values if not passed
     
-    virtual bool makeDungeon();
-
-
     bool displayLevel();                
 };
