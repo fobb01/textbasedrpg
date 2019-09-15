@@ -9,6 +9,6 @@ private:
     long int seed = 0;
     bool checkSuccess();        //Checks if the dungeon generation was successful
 public:
-    long int getSeed();
+    bool genSeed(long int givenSeed = 0);
     Dungeon genDungeon();   //Returns a dungeon which is generated through this method
 };
