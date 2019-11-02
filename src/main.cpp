@@ -1,12 +1,19 @@
-#include "iostream"
-#include "title_page.h"
-#include "title_page.cpp"
+#include <iostream>
 
-int main(int argc, const char** argv) {     //For now I dont have support for command line arguments
+#include "Dungeon.h"                                 //TODO: Figure out how to get rid of the include .cpp files
+#include "Dungeon.cpp"
 
-    int menuSelection;
+#include "TitlePage.h"
+#include "TitlePage.cpp"
 
-    if(initCurses())
+int main(int argc, const char** argv) {                  //For now I dont have support for command line arguments
+   
+   //Declaration of various variables to be used throughout the program
+   int menuSelection = 0, turns = 0;
+   bool gameContinue;
+
+
+    if(initCurses())                                      //Loads Curses initially and displays the main menu
     {
        menuSelection = displayTitle();
     }
@@ -15,6 +22,31 @@ int main(int argc, const char** argv) {     //For now I dont have support for co
        std::cout << "Curses not correctly loaded";
     }
     
+
+   if (menuSelection == 1)                                 //Enters main game loop if a 1 was entered in the title screen
+   {
+       gameContinue = true;
+       clear();
+   }
+   else 
+   {
+      clear();
+      printw("Something went wrong.....\tMenu selection = %d", menuSelection);
+      getch();
+   }
+   
+
+
+   while (gameContinue)                                  //Enters game loop
+   {
+      turns++;                                           //Each time this loops, the turns counter is incremented   
+
+   }
+
+
+
+
+
 
     closeCurses();
 
