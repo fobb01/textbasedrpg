@@ -7,8 +7,8 @@ LIBS = -lncurses
 
 all: $(TARGET)
 
-$(TARGET): src/main.cpp
-	$(CC) $(CFLAGS) -o $(TARGET) src/main.cpp $(LIBS)
+$(TARGET): src/Main.cpp
+	$(CC) $(CFLAGS) -o $(TARGET) src/Main.cpp $(LIBS)
 
 clean:
 	rm $(TARGET)

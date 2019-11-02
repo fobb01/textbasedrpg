@@ -1,4 +1,4 @@
-#ifndef DUNGEON H
+#ifndef DUNGEON_H
 #define DUNGEON_H
 
 #include <ncurses.h>
