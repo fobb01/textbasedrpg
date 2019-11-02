@@ -1,12 +1,5 @@
 #include "title_page.h"
 
-
-int displayTitle()
-{
-    printw("HELLO AND WELCOME TO --untitled-- ROGUELIKE!\n1.) REGULAR GAME");
-    return getch();
-}
-
 bool initCurses()
 {
     initscr();          //Initializes ncurses
@@ -21,3 +14,10 @@ bool closeCurses()
     endwin();       //Closes Curses mode
     return true;
 }
+
+int displayTitle()
+{
+    printw("HELLO AND WELCOME TO --untitled-- ROGUELIKE!\n1.) REGULAR GAME");
+    char choice = getch();
+}
+

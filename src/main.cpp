@@ -9,6 +9,7 @@ int main(int argc, const char** argv) {     //For now I dont have support for co
     if(initCurses())
     {
        menuSelection = displayTitle();
+      
     }
     else
     { 
