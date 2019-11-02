@@ -1,5 +1,5 @@
-#ifndef TITLE_PAGE_H
-#define TITLE_PAGE_H
+#ifndef TITLEPAGE_H
+#define TITLEPAGE_H
 
 #include <ncurses.h>
 
