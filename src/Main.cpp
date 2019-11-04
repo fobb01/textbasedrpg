@@ -1,10 +1,8 @@
 #include <iostream>
-
-#include "Dungeon.h"                                 //TODO: Figure out how to get rid of the include .cpp files
-#include "Dungeon.cpp"
-
 #include "TitlePage.h"
-#include "TitlePage.cpp"
+#include "Dungeon.h"                                 //TODO: Figure out how to get rid of the include .cpp files
+//#include "Dungeon.cpp"
+//#include "TitlePage.cpp"
 
 int main(int argc, const char** argv) {                  //For now I dont have support for command line arguments
    
