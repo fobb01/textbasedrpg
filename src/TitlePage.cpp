@@ -5,6 +5,9 @@ int displayTitle()
 {
     printw("HELLO AND WELCOME TO --untitled-- ROGUELIKE!\n1.) REGULAR GAME");
     int userInput = getch();                                                             //Recieves an ascii value from user input
+
+    //TODO: Add way to check for incorrectly entered values
+
     if (userInput > 48 && userInput < 50)                                                //If statement to control whether correct input was entered or not
         return 1;
     else

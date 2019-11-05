@@ -9,6 +9,7 @@ int main(int argc, const char** argv) {                  //For now I dont have s
    //Declaration of various variables to be used throughout the program
    int menuSelection = 0, turns = 0;
    bool gameContinue;
+   Dungeon* gameDungeon;                                //TODO: Find a better way to create a dungeon object
 
 
     if(initCurses())                                      //Loads Curses initially and displays the main menu
@@ -24,30 +25,38 @@ int main(int argc, const char** argv) {                  //For now I dont have s
 
    if (menuSelection == 1)                                 //Enters main game loop if a 1 was entered in the title screen
    {
-       gameContinue = true;
+       gameDungeon = new Dungeon();                       //Initializes dugeon with the paremeter of level one
        clear();
+       if (!gameDungeon)
+       {
+          printw("Memory incorrectly allocated");  
+          gameContinue = false;
+       }
+       else 
+       {
+          printw("generating level...");
+          gameContinue = true;
+       }
    }
+
    else 
    {
       clear();
       printw("Something went wrong.....\tMenu selection = %d", menuSelection);
       getch();
+      gameContinue = false;
    }
-   
 
-
-   while (gameContinue)                                  //Enters game loop
+   while (gameContinue)                                                  //Enters game loop
    {
-      turns++;                                           //Each time this loops, the turns counter is incremented   
-
+      turns++;                                                           //Each time this loops, the turns counter is incremented   
+      getch();
    }
+ 
 
 
-
-
-
-
-    closeCurses();
-
-    return 0;
+   closeCurses();
+   if (gameDungeon)
+      delete gameDungeon; 
+   return 0;
 }

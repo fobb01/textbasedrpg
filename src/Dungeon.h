@@ -6,11 +6,12 @@
 class Dungeon
 {
 private:
-    int level;
+    int currentLevel;
     bool genLevel();
 public:
-    Dungeon(int seed);
     Dungeon();
+    Dungeon(int level);
+    Dungeon(int level, int seed);
     
     void changeLevel();
 };
