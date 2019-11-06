@@ -3,8 +3,9 @@
 
 #include <ncurses.h>
 
-int displayTitle();
 bool initCurses();
 bool closeCurses();
+int displayTitle();
+
 
 #endif

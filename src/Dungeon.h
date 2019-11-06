@@ -1,4 +1,4 @@
-#ifndef DUNGEON H
+#ifndef DUNGEON_H
 #define DUNGEON_H
 
 #include <ncurses.h>
@@ -6,11 +6,12 @@
 class Dungeon
 {
 private:
-    int level;
+    int currentLevel;
     bool genLevel();
 public:
-    Dungeon(int seed);
     Dungeon();
+    Dungeon(int level);
+    Dungeon(int level, int seed);
     
     void changeLevel();
 };
