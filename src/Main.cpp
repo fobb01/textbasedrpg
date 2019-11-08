@@ -51,6 +51,7 @@ int main(int argc, const char** argv) {                  //For now I dont have s
    {
       turns++;                                                           //Each time this loops, the turns counter is incremented   
       getch();
+      break;
    }
  
 
