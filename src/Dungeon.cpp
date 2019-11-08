@@ -4,19 +4,12 @@
 Dungeon::Dungeon()              //Default contructor when no input specified
 {
     currentLevel = 1;
-    bool levelMade = genLevel();
+    dungeonLayout.resize(25*currentLevel);
 
-    try
+    for(int i = 0; i < 25*currentLevel; i++)
     {
-        if(!levelMade)      //Checks to see if the level was correctly made
-            throw std::runtime_error("Dungeon not Generated");
+        dungeonLayout.at(i).resize(25*currentLevel);    //Work on defining this further
     }
-    catch(const std::exception& e)
-    {
-        //TODO: define what happens here
-        printw("%s\n", e.what());
-    }
-    
 
 }
 
@@ -30,7 +23,7 @@ Dungeon::Dungeon(int level, int seed)                //Contructor with inputted 
 
 }
 
-bool Dungeon::genLevel()
+Dungeon::~Dungeon()
 {
-    return false;
+
 }
