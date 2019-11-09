@@ -10,8 +10,7 @@ Dungeon::Dungeon()              //Default contructor when no input specified
     {
         dungeonLayout.at(i).resize(25*currentLevel);    //Work on defining this further
     }
-
-}
+}   
 
 Dungeon::Dungeon(int level)                          //Constructor with inputted level
 {
@@ -27,3 +26,15 @@ Dungeon::~Dungeon()
 {
 
 }
+
+bool Dungeon::buildSquareRoom(int x, int y)
+{
+    //Figure out a way to build a square room
+
+    return false;
+}   
+
+
+
+
+

@@ -2,6 +2,7 @@
 #define GENERATOR_H
 
 #include "Dungeon.h"
+#include "Tile.h"
 
 class Generator
 {
@@ -11,6 +12,9 @@ class Generator
     public:
     Generator();
     ~Generator();
+
+    void renderDungeon();
+    void updateRender();
 };
 
 #endif
