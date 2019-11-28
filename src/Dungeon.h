@@ -19,10 +19,7 @@ public:
     
     bool buildSquareRoom(int x, int y);
 
-
-
-
-    void changeLevel();
+    void changeLevel(int level);
 };
 
 

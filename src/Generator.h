@@ -7,14 +7,18 @@
 class Generator
 {
     private:
+    int currentLevel;
     Dungeon *dungeon;
 
     public:
     Generator();
+    Generator();
     ~Generator();
 
-    void renderDungeon();
-    void updateRender();
+    void downLevel();
+    void upLevel();
+    bool renderDungeon();
+    bool updateRender();
 };
 
 #endif

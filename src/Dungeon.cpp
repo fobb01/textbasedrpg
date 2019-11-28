@@ -35,6 +35,9 @@ bool Dungeon::buildSquareRoom(int x, int y)
 }   
 
 
-
+void Dungeon::changeLevel(int level)
+{
+    Dungeon(level);
+}
 
 

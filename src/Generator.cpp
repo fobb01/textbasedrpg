@@ -10,3 +10,13 @@ Generator::~Generator()
 {
     delete dungeon;
 }
+
+void Generator::downLevel()
+{
+    dungeon->changeLevel(--currentLevel);
+}
+
+void Generator::upLevel()
+{
+    dungeon->changeLevel(++currentLevel);
+}
