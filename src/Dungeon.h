@@ -17,7 +17,7 @@ public:
     Dungeon(int level, int seed);
     ~Dungeon();
     
-    bool buildSquareRoom(int x, int y);
+    bool buildSquareRoom(int x, int y, int sideLength);
 
     void changeLevel(int level);
 };

@@ -27,10 +27,15 @@ Dungeon::~Dungeon()
 
 }
 
-bool Dungeon::buildSquareRoom(int x, int y)
+bool Dungeon::buildSquareRoom(int x, int y, int sideLength)
 {
     //Figure out a way to build a square room
 
+    //Creates a square room at starting coordinates x and y with the length of each sides as sideLength
+    for(int i = 0; i < sideLength; i++)
+    {
+        
+    }
     return false;
 }   
 
